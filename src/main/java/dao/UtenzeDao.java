@@ -10,7 +10,7 @@ public class UtenzeDao {
 	private final Connection connection;
 
 	public UtenzeDao() throws SQLException {
-		this.connection = new ConnectionFactory().createConnection("sqlite");
+		this.connection = new ConnectionFactory().createConnection("mysql");
 	}
 
 	public void insertUtenza(String email, String password) throws SQLException {

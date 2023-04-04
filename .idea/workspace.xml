@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Aggiunta di sqldialects.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/ARPA.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/TestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/TestServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Test UtenzeDao.java su TestServlet.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680615960396</updated>
       <workItem from="1680615961567" duration="1712000" />
-      <workItem from="1680620595171" duration="7679000" />
+      <workItem from="1680620595171" duration="7986000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta di TestServlet.java">
       <created>1680616702378</created>
@@ -165,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680625261699</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test UtenzeDao.java su TestServlet.java">
+      <created>1680628524890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680628524890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +202,7 @@
     <MESSAGE value="Aggiunta database (+ driver) SQlite" />
     <MESSAGE value="Aggiunta di package factory, model e dao.&#10;Aggiunta di ConnectionFactory.java, UtenzeDao.java e implementazione di metodi per inserimento in DB." />
     <MESSAGE value="Aggiunta di sqldialects.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta di sqldialects.xml" />
+    <MESSAGE value="Test UtenzeDao.java su TestServlet.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test UtenzeDao.java su TestServlet.java" />
   </component>
 </project>

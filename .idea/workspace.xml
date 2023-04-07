@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Eliminazione TestServlet.java">
+    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Aggiunta di un paio di commenti TOP&#10; (apio =&gt; Dannunzio =&gt; autopompini)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/Servlet_Accesso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -180,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680630552112</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Aggiunta di un paio di commenti TOP&#10; (apio =&gt; Dannunzio =&gt; autopompini)">
+      <created>1680863861588</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680863861588</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +229,7 @@
     <MESSAGE value="Aggiunta di sqldialects.xml" />
     <MESSAGE value="Test UtenzeDao.java su TestServlet.java" />
     <MESSAGE value="Eliminazione TestServlet.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminazione TestServlet.java" />
+    <MESSAGE value="Aggiunta di un paio di commenti TOP&#10; (apio =&gt; Dannunzio =&gt; autopompini)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta di un paio di commenti TOP&#10; (apio =&gt; Dannunzio =&gt; autopompini)" />
   </component>
 </project>

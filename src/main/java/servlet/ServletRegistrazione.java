@@ -31,7 +31,7 @@ public class ServletRegistrazione extends HttpServlet {
 
 	}
 
-	// PRESA DA INTERNET, SI OCCUPA DI FARE IL BODY DELLA RICHIESTA
+	// PRESA DA INTERNET, SI OCCUPA DI FARE IL BODY DELLA RICHIESTAA
 	public static String getBody(HttpServletRequest request) throws IOException {
 		String body = null;
 		StringBuilder stringBuilder = new StringBuilder();

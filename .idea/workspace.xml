@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Eliminazione TestServlet.java">
+    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Risoluzione bug sqlite db">
       <change afterPath="$PROJECT_DIR$/src/main/java/servlet/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARPA.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/ARPA.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -54,31 +59,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "ImplementazioneUtenzeDao",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "sqlite"
     ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="servlet.Main" />
+      <module name="ARPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.5" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="ARPA:war exploded">
@@ -117,6 +135,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,7 +152,8 @@
       <workItem from="1680615961567" duration="1712000" />
       <workItem from="1680620595171" duration="7986000" />
       <workItem from="1680630470640" duration="2079000" />
-      <workItem from="1680799369705" duration="350000" />
+      <workItem from="1680799369705" duration="1086000" />
+      <workItem from="1680856825628" duration="963000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta di TestServlet.java">
       <created>1680616702378</created>
@@ -180,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680630552112</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Risoluzione bug sqlite db">
+      <created>1680799901352</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680799901352</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +249,7 @@
     <MESSAGE value="Aggiunta di sqldialects.xml" />
     <MESSAGE value="Test UtenzeDao.java su TestServlet.java" />
     <MESSAGE value="Eliminazione TestServlet.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminazione TestServlet.java" />
+    <MESSAGE value="Risoluzione bug sqlite db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Risoluzione bug sqlite db" />
   </component>
 </project>

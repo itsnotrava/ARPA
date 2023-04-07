@@ -13,6 +13,8 @@ import jakarta.servlet.annotation.*;
 public class ServletRegistrazione extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.addHeader("Access-Control-Allow-Origin", "*");
+
 		String body = getBody(request);
 		// CREDO UN JSON PER IL RISULTATO
 		JsonObject temp = new Gson().fromJson(body, JsonObject.class);

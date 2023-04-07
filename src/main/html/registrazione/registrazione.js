@@ -6,7 +6,7 @@ function registrati(email, password) {
         "password_utente": password
     };
     let request = new XMLHttpRequest();
-    request.open("POST", "https://api.SorboleSensori/nuovo_utente");
+    request.open("POST", "http://localhost:8080/ARPA_war_exploded/registrazione");
     request.onload = function() {
         let risultatoDiv = document.getElementById("risultato");
         risultatoDiv.innerText = JSON.parse(request.responseText)["risultato"];

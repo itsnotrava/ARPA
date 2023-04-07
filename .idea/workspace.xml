@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Eliminazione TestServlet.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

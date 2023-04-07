@@ -6,6 +6,6 @@ import java.sql.SQLException;
 
 public class Main {
 	public static void main(String[] args) throws SQLException {
-		UtenzeDao utenzeDao = new UtenzeDao();
+		UtenzeDao utenzeDao = new UtenzeDao(); // Data Access Object
 	}
 }

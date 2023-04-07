@@ -24,7 +24,7 @@ public class ConnectionFactory {
 				dataSource.setUrl("jdbc:sqlite:ARPA.sqlite");
 				return dataSource.getConnection();
 			}
-			case "mysql" -> {
+			case "mysql" -> { // PER COGLIONI
 				MysqlDataSource dataSource = new MysqlDataSource();
 				dataSource.setUrl("jdbc:mysql://localhost/ARPA?user=root");
 				return dataSource.getConnection();

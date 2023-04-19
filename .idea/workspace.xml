@@ -9,9 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Eliminazione TestServlet.java">
+    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Modifica per testing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exception/EmailAlreadyTaken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +155,9 @@
       <workItem from="1680630470640" duration="2079000" />
       <workItem from="1680799369705" duration="350000" />
       <workItem from="1680861538825" duration="87000" />
+      <workItem from="1681145209411" duration="68000" />
+      <workItem from="1681936948627" duration="36000" />
+      <workItem from="1681937000552" duration="1508000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta di TestServlet.java">
       <created>1680616702378</created>
@@ -198,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680630552112</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Modifica per testing">
+      <created>1680869875183</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680869875183</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +253,7 @@
     <MESSAGE value="Aggiunta di sqldialects.xml" />
     <MESSAGE value="Test UtenzeDao.java su TestServlet.java" />
     <MESSAGE value="Eliminazione TestServlet.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminazione TestServlet.java" />
+    <MESSAGE value="Modifica per testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifica per testing" />
   </component>
 </project>

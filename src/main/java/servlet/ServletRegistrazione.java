@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import dao.UtenzeDao;
+import exception.EmailAlreadyTaken;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -20,21 +21,34 @@ public class ServletRegistrazione extends HttpServlet {
 		JsonObject temp = new Gson().fromJson(body, JsonObject.class);
 		// fromJason => trasforma da stringa a Json, prende in input -stringa- -tipo destinazione-
 
-		String nome = temp.get("nome_utente").toString(); // TROVO IL NOME
+		String email = temp.get("email_utente").toString(); // TROVO IL NOME
 		String password = temp.get("password_utente").toString(); // TROVO LA PASSWORD
 
-		UtenzeDao DataAccessObject = null;
+		UtenzeDao utenzeDao;
+		JsonObject responseJson = new JsonObject();
 		try {
-			DataAccessObject = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
-			DataAccessObject.insertUtenza(nome, password); // CREO INSERISCO I DATI CHE VERRANNO MANDATI AL DB
+			utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
+			// Controlla che la email non sia già registrata
+			utenzeDao.insertUtenza(email, password); // CREO INSERISCO I DATI CHE VERRANNO MANDATI AL DB
+		} catch (EmailAlreadyTaken e) {
+			responseJson.addProperty("risultato", "email già registrata, accedi!");
 		} catch (SQLException e) {
-			throw new RuntimeException(e);
+			responseJson.addProperty("risultato", "errore nel server");
 		}
 
+		// Invio il risultato al client
+		PrintWriter printWriter = response.getWriter();
+		printWriter.println(responseJson.toString());
+		printWriter.flush();
 	}
 
-	// PRESA DA INTERNET, SI OCCUPA DI FARE IL BODY DELLA RICHIESTAA
-	public static String getBody(HttpServletRequest request) throws IOException {
+	/**
+	 * PRESA DA INTERNET, SI OCCUPA DI FARE IL BODY DELLA RICHIESTAA
+	 * @param request
+	 * @return String body
+	 * @throws IOException
+	 */
+	private static String getBody(HttpServletRequest request) throws IOException {
 		String body = null;
 		StringBuilder stringBuilder = new StringBuilder();
 		BufferedReader bufferedReader = null;
@@ -47,18 +61,10 @@ public class ServletRegistrazione extends HttpServlet {
 				while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
 					stringBuilder.append(charBuffer, 0, bytesRead);
 				}
-			} else {
-				stringBuilder.append("");
 			}
-		} catch (IOException ex) {
-			throw ex;
 		} finally {
 			if (bufferedReader != null) {
-				try {
-					bufferedReader.close();
-				} catch (IOException ex) {
-					throw ex;
-				}
+				bufferedReader.close();
 			}
 		}
 		body = stringBuilder.toString();

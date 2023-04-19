@@ -1,5 +1,6 @@
 package dao;
 
+import exception.EmailAlreadyTaken;
 import factory.ConnectionFactory;
 
 import java.sql.Connection;
@@ -7,14 +8,32 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
+
 public class UtenzeDao {
+
 	private final Connection connection;
 
 	public UtenzeDao() throws SQLException {
 		this.connection = new ConnectionFactory().createConnection("sqlite");
 	}
 
-	public void insertUtenza(String email, String password) throws SQLException {
+	private boolean checkEmail(String email) throws SQLException {
+		String sql = "SELECT id FROM Utenze WHERE email=?";
+		PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
+		preparedStatement.setString(1, email);
+
+		ResultSet resultSet = preparedStatement.executeQuery();
+		resultSet.next();
+		return resultSet.getInt(1) != 0;
+	}
+
+	public void insertUtenza(String email, String password) throws SQLException, EmailAlreadyTaken {
+		// Controlla che la email non esista già
+		if (!checkEmail(email)) {
+			throw new EmailAlreadyTaken();
+		}
+
 		String sql = "INSERT INTO Utenze (email, password) VALUES (?, ?)";
 		PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
 		preparedStatement.setString(1, email);

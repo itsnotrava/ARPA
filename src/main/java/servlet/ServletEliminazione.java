@@ -8,9 +8,6 @@ import jakarta.servlet.annotation.*;
 @WebServlet(name = "eliminazione", value = "/eliminazione")
 public class ServletEliminazione extends HttpServlet {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-	}
-
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 	}
 

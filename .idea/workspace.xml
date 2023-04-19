@@ -9,16 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Modifica per testing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exception/EmailAlreadyTaken.java" afterDir="false" />
+    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Aggiunta pagina e script di accesso; implementazione di un eccezione (EmailAlreadyTaken.java) per la gestione degli errori in fase di registrazione in UtenzeDao.java e in ServletRegistrazione.java.">
+      <change afterPath="$PROJECT_DIR$/src/main/html/test.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARPA.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/ARPA.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +26,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" />
+    <file url="file:///tmp/whats-new.http.http" environment="test" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -60,31 +67,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "sessioni",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "sqlite"
     ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.5">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="servlet.Main" />
+      <module name="ARPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/html/test.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/html/test.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.5" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="ARPA:war exploded">
@@ -141,6 +167,13 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="HTTP Request.test | #1" />
+        <item itemvalue="HTTP Request.All in test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -157,7 +190,7 @@
       <workItem from="1680861538825" duration="87000" />
       <workItem from="1681145209411" duration="68000" />
       <workItem from="1681936948627" duration="36000" />
-      <workItem from="1681937000552" duration="1508000" />
+      <workItem from="1681937000552" duration="5346000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta di TestServlet.java">
       <created>1680616702378</created>
@@ -215,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680869875183</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Aggiunta pagina e script di accesso; implementazione di un eccezione (EmailAlreadyTaken.java) per la gestione degli errori in fase di registrazione in UtenzeDao.java e in ServletRegistrazione.java.">
+      <created>1681938919853</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681938919853</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,19 +266,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -254,6 +282,7 @@
     <MESSAGE value="Test UtenzeDao.java su TestServlet.java" />
     <MESSAGE value="Eliminazione TestServlet.java" />
     <MESSAGE value="Modifica per testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifica per testing" />
+    <MESSAGE value="Aggiunta pagina e script di accesso; implementazione di un eccezione (EmailAlreadyTaken.java) per la gestione degli errori in fase di registrazione in UtenzeDao.java e in ServletRegistrazione.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta pagina e script di accesso; implementazione di un eccezione (EmailAlreadyTaken.java) per la gestione degli errori in fase di registrazione in UtenzeDao.java e in ServletRegistrazione.java." />
   </component>
 </project>

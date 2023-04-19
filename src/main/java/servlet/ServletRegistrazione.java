@@ -24,16 +24,15 @@ public class ServletRegistrazione extends HttpServlet {
 		String email = temp.get("email_utente").toString(); // TROVO IL NOME
 		String password = temp.get("password_utente").toString(); // TROVO LA PASSWORD
 
-		UtenzeDao utenzeDao;
 		JsonObject responseJson = new JsonObject();
 		try {
-			utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
+			UtenzeDao utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
 			// Controlla che la email non sia già registrata
 			utenzeDao.insertUtenza(email, password); // CREO INSERISCO I DATI CHE VERRANNO MANDATI AL DB
 		} catch (EmailAlreadyTaken e) {
 			responseJson.addProperty("risultato", "email già registrata, accedi!");
 		} catch (SQLException e) {
-			responseJson.addProperty("risultato", "errore nel server");
+			responseJson.addProperty("risultato", "errore nel server --> "+e);
 		}
 
 		// Invio il risultato al client
@@ -49,25 +48,12 @@ public class ServletRegistrazione extends HttpServlet {
 	 * @throws IOException
 	 */
 	private static String getBody(HttpServletRequest request) throws IOException {
-		String body = null;
-		StringBuilder stringBuilder = new StringBuilder();
-		BufferedReader bufferedReader = null;
-		try {
-			InputStream inputStream = request.getInputStream();
-			if (inputStream != null) {
-				bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-				char[] charBuffer = new char[128];
-				int bytesRead = -1;
-				while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
-					stringBuilder.append(charBuffer, 0, bytesRead);
-				}
-			}
-		} finally {
-			if (bufferedReader != null) {
-				bufferedReader.close();
-			}
+		StringBuilder sb = new StringBuilder();
+		BufferedReader reader = request.getReader();
+		String line;
+		while ((line = reader.readLine()) != null) {
+			sb.append(line);
 		}
-		body = stringBuilder.toString();
-		return body;
+		return sb.toString();
 	}
 }

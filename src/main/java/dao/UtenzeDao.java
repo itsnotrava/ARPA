@@ -25,7 +25,7 @@ public class UtenzeDao {
 
 		ResultSet resultSet = preparedStatement.executeQuery();
 		resultSet.next();
-		return resultSet.getInt(1) != 0;
+		return resultSet.getInt(1) == 0;
 	}
 
 	public void insertUtenza(String email, String password) throws SQLException, EmailAlreadyTaken {

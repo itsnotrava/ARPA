@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import dao.UtenzeDao;
-import exception.EmailAlreadyTaken;
+import exception.EmailAlreadyTakenException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -29,10 +29,12 @@ public class ServletRegistrazione extends HttpServlet {
 			UtenzeDao utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
 			// Controlla che la email non sia già registrata
 			utenzeDao.insertUtenza(email, password); // CREO INSERISCO I DATI CHE VERRANNO MANDATI AL DB
-		} catch (EmailAlreadyTaken e) {
+		} catch (EmailAlreadyTakenException e) {
 			responseJson.addProperty("risultato", "email già registrata, accedi!");
 		} catch (SQLException e) {
 			responseJson.addProperty("risultato", "errore nel server --> "+e);
+		} finally {
+			responseJson.addProperty("risultato", "sul cesso!");
 		}
 
 		// Invio il risultato al client

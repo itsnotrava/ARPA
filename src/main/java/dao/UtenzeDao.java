@@ -57,15 +57,15 @@ public class UtenzeDao {
 	 * Metodo che da email e password returna 0 se l'utente non esiste,
 	 * e il suo ID se invece esiste.
 	 * @param email
-	 * @param password
 	 * @return id [0, *]
 	 * @throws SQLException
 	 */
-	public int getIdFromUtenza(String email, String password) throws SQLException {
-		String sql = "SELECT id FROM Utenze WHERE email=? AND password=?";
+	//public int getIdFromUtenza(String email, String password) throws SQLException {
+	public int getIdFromUtenza(String email) throws SQLException {
+		String sql = "SELECT id FROM Utenze WHERE email=?";
 		PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
 		preparedStatement.setString(1, email);
-		preparedStatement.setString(2, password);
+		//preparedStatement.setString(2, password);
 
 		ResultSet resultSet = preparedStatement.executeQuery();
 		resultSet.next();

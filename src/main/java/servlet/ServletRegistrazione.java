@@ -51,7 +51,7 @@ public class ServletRegistrazione extends HttpServlet {
 	 * @throws IOException
 	 */
 	private static String getBody(HttpServletRequest request) throws IOException {
-		String body = null;
+		String body;
 		StringBuilder stringBuilder = new StringBuilder();
 		BufferedReader bufferedReader = null;
 		try {

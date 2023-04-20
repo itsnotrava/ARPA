@@ -28,7 +28,6 @@ public class ServletEliminazione extends HttpServlet {
 			DataAccessObject = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
 			int id_utente = DataAccessObject.getIdFromUtenza(nome); // TROVO IL ID DI UTENTE
 			DataAccessObject.deleteUtenza(id_utente); // CANCELLO UTENZA
-
 		} catch (Exception e) {
 			responseJson.addProperty("risultato", "Boia, errore");
 		} finally {
@@ -44,7 +43,7 @@ public class ServletEliminazione extends HttpServlet {
 
 	// PRESA DA INTERNET, SI OCCUPA DI FARE IL BODY DELLA RICHIESTAA
 	public static String getBody(HttpServletRequest request) throws IOException {
-		String body = null;
+		String body;
 		StringBuilder stringBuilder = new StringBuilder();
 		BufferedReader bufferedReader = null;
 		try {
@@ -56,18 +55,10 @@ public class ServletEliminazione extends HttpServlet {
 				while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
 					stringBuilder.append(charBuffer, 0, bytesRead);
 				}
-			} else {
-				stringBuilder.append("");
 			}
-		} catch (IOException ex) {
-			throw ex;
 		} finally {
 			if (bufferedReader != null) {
-				try {
-					bufferedReader.close();
-				} catch (IOException ex) {
-					throw ex;
-				}
+				bufferedReader.close();
 			}
 		}
 		body = stringBuilder.toString();

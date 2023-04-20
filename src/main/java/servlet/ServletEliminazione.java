@@ -20,7 +20,7 @@ public class ServletEliminazione extends HttpServlet {
 		JsonObject temp = new Gson().fromJson(body, JsonObject.class);
 		// fromJason => trasforma da stringa a Json, prende in input -stringa- -tipo destinazione-
 
-		String nome = temp.get("nome_utente").toString(); // TROVO IL NOME (email)
+		String nome = temp.get("email_utente").toString(); // TROVO IL NOME (email)
 		// CREO ISTANZA DAO e Json di risposta
 		UtenzeDao DataAccessObject = null;
 		JsonObject responseJson = new JsonObject(); // CREO JsonObject per la risposta

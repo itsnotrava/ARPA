@@ -24,16 +24,15 @@ public class ServletRegistrazione extends HttpServlet {
 		String email = temp.get("email_utente").toString(); // TROVO IL NOME
 		String password = temp.get("password_utente").toString(); // TROVO LA PASSWORD
 
-		UtenzeDao utenzeDao;
 		JsonObject responseJson = new JsonObject();
 		try {
-			utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
+			UtenzeDao utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
 			// Controlla che la email non sia già registrata
 			utenzeDao.insertUtenza(email, password); // CREO INSERISCO I DATI CHE VERRANNO MANDATI AL DB
 		} catch (EmailAlreadyTakenException e) {
 			responseJson.addProperty("risultato", "email già registrata, accedi!");
 		} catch (SQLException e) {
-			responseJson.addProperty("risultato", "errore nel server");
+			responseJson.addProperty("risultato", "errore nel server --> "+e);
 		} finally {
 			responseJson.addProperty("risultato", "sul cesso!");
 		}

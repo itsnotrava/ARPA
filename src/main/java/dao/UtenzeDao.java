@@ -1,6 +1,6 @@
 package dao;
 
-import exception.EmailAlreadyTaken;
+import exception.EmailAlreadyTakenException;
 import factory.ConnectionFactory;
 
 import java.sql.Connection;
@@ -28,10 +28,10 @@ public class UtenzeDao {
 		return resultSet.getInt(1) != 0;
 	}
 
-	public void insertUtenza(String email, String password) throws SQLException, EmailAlreadyTaken {
+	public void insertUtenza(String email, String password) throws SQLException, EmailAlreadyTakenException {
 		// Controlla che la email non esista già
 		if (!checkEmail(email)) {
-			throw new EmailAlreadyTaken();
+			throw new EmailAlreadyTakenException();
 		}
 
 		String sql = "INSERT INTO Utenze (email, password) VALUES (?, ?)";
@@ -65,7 +65,6 @@ public class UtenzeDao {
 		String sql = "SELECT id FROM Utenze WHERE email=?";
 		PreparedStatement preparedStatement = this.connection.prepareStatement(sql);
 		preparedStatement.setString(1, email);
-		//preparedStatement.setString(2, password);
 
 		ResultSet resultSet = preparedStatement.executeQuery();
 		resultSet.next();

@@ -10,14 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Modifica per testing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exception/EmailAlreadyTaken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +34,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" root0="FORCE_HIGHLIGHTING" />
@@ -219,14 +214,7 @@
       <option name="project" value="LOCAL" />
       <updated>1680869875183</updated>
     </task>
-    <task id="LOCAL-00009" summary="Implementato Servlet_Registrazione">
-      <created>1682011409392</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1682011409392</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +253,6 @@
     <MESSAGE value="Test UtenzeDao.java su TestServlet.java" />
     <MESSAGE value="Eliminazione TestServlet.java" />
     <MESSAGE value="Modifica per testing" />
-    <MESSAGE value="Implementato Servlet_Registrazione" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementato Servlet_Registrazione" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifica per testing" />
   </component>
 </project>

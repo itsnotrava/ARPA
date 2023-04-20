@@ -50,7 +50,4 @@ public class ServletAccesso extends HttpServlet {
 		return sb.toString();
 	}
 
-
-
-
 }

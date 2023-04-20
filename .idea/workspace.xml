@@ -10,12 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Modifica per testing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exception/EmailAlreadyTaken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" afterDir="false" />
@@ -34,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">

@@ -1,12 +1,10 @@
 package servlet;
 
 import java.io.*;
-import java.sql.SQLException;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import dao.UtenzeDao;
-import exception.EmailAlreadyTakenException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -14,6 +12,7 @@ import jakarta.servlet.annotation.*;
 public class ServletEliminazione extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.addHeader("Access-Control-Allow-Origin", "*");
 
 		String body = getBody(request);
 		// CREDO UN JSON PER IL RISULTATO

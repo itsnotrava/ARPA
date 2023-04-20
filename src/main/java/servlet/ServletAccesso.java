@@ -12,12 +12,14 @@ import jakarta.servlet.annotation.*;
 public class ServletAccesso extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.addHeader("Access-Control-Allow-Origin", "*");
+
 		String body = getBody(request);
 		// CREDO UN JSON PER IL RISULTATO
 		JsonObject temp = new Gson().fromJson(body, JsonObject.class);
 		// fromJason => trasforma da stringa a Json, prende in input -stringa- -tipo destinazione-
 
-		String nome = temp.get("nome_utente").toString(); // TROVO IL NOME (email)
+		String nome = temp.get("email_utente").toString(); // TROVO IL NOME (email)
 		String password = temp.get("password_utente").toString(); // TROVO IL NOME (email)
 		// CREO ISTANZA DAO e Json di risposta
 		UtenzeDao DataAccessObject = null;
@@ -49,8 +51,5 @@ public class ServletAccesso extends HttpServlet {
 		}
 		return sb.toString();
 	}
-
-
-
 
 }

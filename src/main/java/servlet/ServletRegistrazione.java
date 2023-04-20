@@ -34,6 +34,8 @@ public class ServletRegistrazione extends HttpServlet {
 			responseJson.addProperty("risultato", "email già registrata, accedi!");
 		} catch (SQLException e) {
 			responseJson.addProperty("risultato", "errore nel server");
+		} finally {
+			responseJson.addProperty("risultato", "sul cesso!");
 		}
 
 		// Invio il risultato al client

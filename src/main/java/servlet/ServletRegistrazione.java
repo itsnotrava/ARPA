@@ -51,25 +51,12 @@ public class ServletRegistrazione extends HttpServlet {
 	 * @throws IOException
 	 */
 	private static String getBody(HttpServletRequest request) throws IOException {
-		String body;
-		StringBuilder stringBuilder = new StringBuilder();
-		BufferedReader bufferedReader = null;
-		try {
-			InputStream inputStream = request.getInputStream();
-			if (inputStream != null) {
-				bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-				char[] charBuffer = new char[128];
-				int bytesRead = -1;
-				while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
-					stringBuilder.append(charBuffer, 0, bytesRead);
-				}
-			}
-		} finally {
-			if (bufferedReader != null) {
-				bufferedReader.close();
-			}
+		StringBuilder sb = new StringBuilder();
+		BufferedReader reader = request.getReader();
+		String line;
+		while ((line = reader.readLine()) != null) {
+			sb.append(line);
 		}
-		body = stringBuilder.toString();
-		return body;
+		return sb.toString();
 	}
 }

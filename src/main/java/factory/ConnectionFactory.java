@@ -21,7 +21,7 @@ public class ConnectionFactory {
 		switch (tipoDatabase) {
 			case "sqlite" -> {
 				SQLiteDataSource dataSource = new SQLiteDataSource();
-				dataSource.setUrl("jdbc:sqlite:ARPA.sqlite");
+				dataSource.setUrl("jdbc:sqlite:/home/nicola/Documents/CODE/Java/ARPA/ARPA.sqlite");
 				return dataSource.getConnection();
 			}
 			case "mysql" -> { // PER COGLIONI

@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Test debug ARPA.sqlite">
+    <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Correzione bug in UtenzeDao.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARPA.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/ARPA.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/html/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +72,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/nicola/.config/JetBrains/IntelliJIdea2023.1/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,10 +86,11 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql",
-      "postgresql",
       "derby",
-      "sqlite"
+      "sqlite",
+      "h2",
+      "hsqldb",
+      "mysql"
     ]
   }
 }]]></component>
@@ -277,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682276984538</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Correzione bug in UtenzeDao.java">
+      <created>1682277540089</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682277540089</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +334,7 @@
     <MESSAGE value="Risoluzione bug in servlets" />
     <MESSAGE value="Risoluzione bug ServletAccesso.java" />
     <MESSAGE value="Test debug ARPA.sqlite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test debug ARPA.sqlite" />
+    <MESSAGE value="Correzione bug in UtenzeDao.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correzione bug in UtenzeDao.java" />
   </component>
 </project>

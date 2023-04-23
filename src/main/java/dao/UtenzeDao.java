@@ -23,13 +23,16 @@ public class UtenzeDao {
 		preparedStatement.setString(1, email);
 
 		ResultSet resultSet = preparedStatement.executeQuery();
+		if (resultSet.isClosed()) {
+			return false;
+		}
 		resultSet.next();
-		return resultSet.getInt(1) == 0;
+		return resultSet.getInt(1) != 0;
 	}
 
 	public void insertUtenza(String email, String password) throws SQLException, EmailAlreadyTakenException {
 		// Controlla che la email non esista già
-		if (!checkEmail(email)) {
+		if (checkEmail(email)) {
 			throw new EmailAlreadyTakenException();
 		}
 

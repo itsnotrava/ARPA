@@ -29,12 +29,11 @@ public class ServletRegistrazione extends HttpServlet {
 			UtenzeDao utenzeDao = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
 			// Controlla che la email non sia già registrata
 			utenzeDao.insertUtenza(email, password); // CREO INSERISCO I DATI CHE VERRANNO MANDATI AL DB
+			responseJson.addProperty("risultato", "sul cesso!");
 		} catch (EmailAlreadyTakenException e) {
 			responseJson.addProperty("risultato", "email già registrata, accedi!");
 		} catch (SQLException e) {
 			responseJson.addProperty("risultato", "errore nel server --> "+e);
-		} finally {
-			responseJson.addProperty("risultato", "sul cesso!");
 		}
 
 		// Invio il risultato al client

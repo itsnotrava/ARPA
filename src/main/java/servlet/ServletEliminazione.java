@@ -27,10 +27,9 @@ public class ServletEliminazione extends HttpServlet {
 			DataAccessObject = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
 			int id_utente = DataAccessObject.getIdFromUtenza(nome); // TROVO IL ID DI UTENTE
 			DataAccessObject.deleteUtenza(id_utente); // CANCELLO UTENZA
+			responseJson.addProperty("risultato", "sul cesso!");
 		} catch (Exception e) {
 			responseJson.addProperty("risultato", "Boia, errore");
-		} finally {
-			responseJson.addProperty("risultato", "sul cesso!");
 		}
 
 		// Invio il risultato al client

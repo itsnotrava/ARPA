@@ -26,8 +26,12 @@ public class ServletAccesso extends HttpServlet {
 		JsonObject responseJson = new JsonObject(); // CREO JsonObject per la risposta
 		try {
 			DataAccessObject = new UtenzeDao(); // CREDO ISTANZA UTENZE_DAO
-			DataAccessObject.verifyUtenza(nome, password); // VERIFICO UTENZA
-			responseJson.addProperty("risultato", "sul cesso!");
+			boolean verifica = DataAccessObject.verifyUtenza(nome, password); // VERIFICO UTENZA
+			if (verifica) {
+				responseJson.addProperty("risultato", "sul cesso!");
+			} else {
+				responseJson.addProperty("risultato", "nome o password errati");
+			}
 		} catch (Exception e) {
 			responseJson.addProperty("risultato", "Boia, errore");
 		}

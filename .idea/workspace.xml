@@ -10,30 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="Tentativo correzione bug SQLite">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/accesso/accesso.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/eliminazione/eliminazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/eliminazione/eliminazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/eliminazione/eliminazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/eliminazione/eliminazione.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/registrazione/registrazione.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exception/EmailAlreadyTakenException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/EmailAlreadyTakenException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletAccesso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletEliminazione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletRegistrazione.java" afterDir="false" />
+    </list>
+    <list id="e362095c-47f0-407b-b802-75e7d2bc0f0d" name="Patch Ghidotti" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UtenzeDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +73,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/nicola/.config/JetBrains/IntelliJIdea2023.1/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3",
+    "last_opened_file_path": "C:/Users/eliam/Downloads/G5-ARPA_dbg20230424.patch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -202,6 +184,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="abad2009-b147-4dbc-9b47-6c2954a99bae" name="Changes" comment="" />
+      <changelist id="e362095c-47f0-407b-b802-75e7d2bc0f0d" name="Patch Ghidotti" comment="" />
       <created>1680615960396</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -215,6 +198,8 @@
       <workItem from="1681936948627" duration="36000" />
       <workItem from="1681937000552" duration="1508000" />
       <workItem from="1682021718771" duration="2552000" />
+      <workItem from="1682676168146" duration="198000" />
+      <workItem from="1682676367111" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta di TestServlet.java">
       <created>1680616702378</created>
